@@ -4,11 +4,6 @@ pipeline{
     }
     agent any
     stages{
-        stage("Stage 1 : Git Clone"){
-            steps{
-                git "https://github.com/SankalpKothari0904/SPEMiniProject.git"
-            }
-        }
         
         stage("Stage 2 : Maven Build"){
             steps{
