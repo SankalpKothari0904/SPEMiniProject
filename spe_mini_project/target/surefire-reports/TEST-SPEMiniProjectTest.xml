@@ -30,7 +30,7 @@
     <property name="java.class.version" value="61.0"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="os.version" value="5.15.0-121-generic"/>
+    <property name="os.version" value="5.15.0-122-generic"/>
     <property name="library.jansi.path" value="/usr/share/maven/lib/jansi-native"/>
     <property name="user.home" value="/home/sankalp"/>
     <property name="user.timezone" value="Asia/Kolkata"/>
