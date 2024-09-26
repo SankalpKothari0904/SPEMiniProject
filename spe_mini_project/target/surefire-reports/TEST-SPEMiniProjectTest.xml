@@ -59,7 +59,7 @@
     <property name="sun.stdout.encoding" value="UTF-8"/>
   </properties>
   <testcase classname="SPEMiniProjectTest" name="testsqrt_1" time="0.002"/>
-  <testcase classname="SPEMiniProjectTest" name="testsqrt_2" time="0"/>
+  <testcase classname="SPEMiniProjectTest" name="testsqrt_2" time="0.001"/>
   <testcase classname="SPEMiniProjectTest" name="testsqrt_3" time="0"/>
   <testcase classname="SPEMiniProjectTest" name="testlog_1" time="0"/>
   <testcase classname="SPEMiniProjectTest" name="testlog_2" time="0"/>
@@ -69,5 +69,5 @@
   <testcase classname="SPEMiniProjectTest" name="testpower_3" time="0"/>
   <testcase classname="SPEMiniProjectTest" name="testfactorial_1" time="0"/>
   <testcase classname="SPEMiniProjectTest" name="testfactorial_2" time="0"/>
-  <testcase classname="SPEMiniProjectTest" name="testfactorial_3" time="0.001"/>
+  <testcase classname="SPEMiniProjectTest" name="testfactorial_3" time="0"/>
 </testsuite>
