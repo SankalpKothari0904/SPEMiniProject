@@ -43,7 +43,10 @@ pipeline{
         
         stage('Stage 5 : Ansible Deployment') {
             steps {
-                sh 'ansible-playbook -i inventory Deploy-Calculator.yml'
+                dir('spe_mini_project'){
+                    sh 'ansible-playbook -i inventory Deploy-Calculator.yml'
+                }
+                // sh 'ansible-playbook -i inventory Deploy-Calculator.yml'
             }
         }
     }
