@@ -22,7 +22,7 @@ pipeline{
         stage("Stage 2 : Build Docker Image"){
             steps{
                 dir('spe_mini_project'){
-                    sh 'cp target/calculator-0.0.1-SNAPSHOT.jar ../Docker/calculator.jar'
+                    sh 'cp target/spe_mini_project-1.0-SNAPSHOT.jar ../Docker/calculator.jar'
                 }
                 // sh "docker build -t sankalpkothari/calculator:latest ."
             }
