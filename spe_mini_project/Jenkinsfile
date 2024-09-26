@@ -12,7 +12,10 @@ pipeline{
         
         stage("Stage 1 : Maven Build"){
             steps{
-                sh 'mvn clean install'
+                dir('spe_mini_project'){
+                    sh 'mvn clean install'
+                }
+                // sh 'mvn clean install'
             }
         }
         
