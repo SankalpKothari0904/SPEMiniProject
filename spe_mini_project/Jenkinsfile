@@ -4,18 +4,12 @@ pipeline{
     }
     agent any
     stages{
-        // stage("Stage 1 : Git Clone"){
-        //     steps{
-        //         git "https://github.com/SankalpKothari0904/SPEMiniProject"
-        //     }
-        // }
         
         stage("Stage 1 : Maven Build"){
             steps{
                 dir('spe_mini_project'){
                     sh 'mvn clean install'
                 }
-                // sh 'mvn clean install'
             }
         }
         
@@ -46,7 +40,6 @@ pipeline{
                 dir('spe_mini_project'){
                     sh 'ansible-playbook -i inventory Deploy-Calculator.yml'
                 }
-                // sh 'ansible-playbook -i inventory Deploy-Calculator.yml'
             }
         }
     }
