@@ -35,6 +35,7 @@ pipeline{
                 sh "docker container prune -f"
                 sh "docker image prune -a -f"
             }
+            // clean unwanted docker images
         }
         
         stage('Stage 5 : Ansible Deployment') {
