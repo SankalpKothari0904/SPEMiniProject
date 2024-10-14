@@ -10,6 +10,7 @@ pipeline{
                 dir('spe_mini_project'){
                     sh 'mvn clean install'
                 }
+                //builds jar file and runs all tests, creates target folder
             }
         }
         
@@ -26,6 +27,7 @@ pipeline{
                 sh 'echo $DOCKERHUB_CRED_PSW | docker login -u $DOCKERHUB_CRED_USR --password-stdin'
                 sh "docker push sankalpkothari/calculator:latest"
             }
+            //docker login and push image to dockerhub
         }
         
         stage("Stage 4 : Clean Unwanted Docker Images"){
